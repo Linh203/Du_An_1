@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:orientation="vertical"
+    android:background="#9CD0FA"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/btnback_log"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/txt_dangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#074D85"
+            android:textAllCaps="true"
+            android:layout_marginBottom="50dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            app:hintTextColor="#074D85"
+            app:startIconDrawable="@drawable/user"
+            android:layout_margin="5dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#074D85"
+                android:inputType="text"
+                android:id="@+id/txt_loginTK"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            app:hintTextColor="#074D85"
+            app:startIconDrawable="@drawable/padlock"
+            android:layout_margin="5dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#074D85"
+                android:inputType="textPassword"
+                android:id="@+id/txt_loginMK"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <CheckBox
+                android:id="@+id/chkluuTK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lưu tài khoản"
+                />
+            <TextView
+                android:id="@+id/txtQuenMK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quên mật khẩu?"
+                android:layout_marginLeft="120dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:paddingTop="100dp"
+            >
+            <Button
+                android:id="@+id/btnlogin_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập"
+                android:textSize="20dp"
+                android:backgroundTint="#064475"
+                />
+            <Button
+                android:id="@+id/btnregister_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"
+                android:textSize="20dp"
+                android:backgroundTint="#CDDC39"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

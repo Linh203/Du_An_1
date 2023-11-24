@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="Trang chủ"
+    android:icon="@drawable/home"
+    android:id="@+id/home"
+    />
+    <item android:title="Bàn ăn"
+        android:icon="@drawable/roundtable"
+        android:id="@+id/banan"
+        />
+    <item android:title="Thống kê"
+        android:icon="@drawable/barchart"
+        android:id="@+id/thongke"
+        />
+<!--    <item android:title="Thực đơn"-->
+<!--        android:icon="@drawable/menu"-->
+<!--        android:id="@+id/thucdon"-->
+<!--        />-->
+    <item android:title="Cài đặt"
+        android:icon="@drawable/setting"
+        android:id="@+id/caidat"
+        />
+</menu>

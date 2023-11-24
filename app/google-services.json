@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "316952607106",
+    "project_id": "duan1-21ad4",
+    "storage_bucket": "duan1-21ad4.appspot.com",
+    "firebase_url":"https://duan1-21ad4-default-rtdb.asia-southeast1.firebasedatabase.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316952607106:android:03b0cb53836521aa81779b",
+        "android_client_info": {
+          "package_name": "com.example.du_an_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0wRZ95CjiKdCHc2-WuPdckKVCbQve0Xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
