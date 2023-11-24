@@ -13,7 +13,6 @@ import com.example.du_an_1.Model.Category;
 import com.example.du_an_1.R;
 import com.example.du_an_1.ViewHolder.Menu_viewholder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.firebase.Firebase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
@@ -29,12 +28,16 @@ public class frg_home extends Fragment {
                              Bundle savedInstanceState) {
 
         View view =  inflater.inflate(R.layout.fragment_frg_home, container, false);
+
         firebaseDatabase = FirebaseDatabase.getInstance();
         Menu = firebaseDatabase.getReference("Category");
+
         rcv_menu = view.findViewById(R.id.rcv_menu);
+
         manager = new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false);
         rcv_menu.setHasFixedSize(true);
         rcv_menu.setLayoutManager(manager);
+
         loadMenu();
         return view;
     }
@@ -43,9 +46,10 @@ public class frg_home extends Fragment {
         adapter = new FirebaseRecyclerAdapter<Category, Menu_viewholder>(Category.class,R.layout.item_menu, Menu_viewholder.class,Menu) {
             @Override
             protected void populateViewHolder(Menu_viewholder menuViewholder, Category category, int i) {
-                menuViewholder.txtmenu_name.setText(category.getName_Menu());
-                Picasso.with(getContext()).load(category.getImg_Menu()).into(menuViewholder.menu_img);
+                menuViewholder.txtmenu_name.setText(category.getName());
+                Picasso.with(getContext()).load(category.getImage()).into(menuViewholder.menu_img);
             }
         };
+        rcv_menu.setAdapter(adapter);
     }
 }
